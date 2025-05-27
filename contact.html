@@ -16,11 +16,18 @@
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 </head>
 
 <body>
@@ -35,7 +42,7 @@
             <div class="header-lower">
                 <div class="main-box clearfix">
                     <div class="logo-box">
-                        <div class="logo"><a href="index.html"><img src="images/logoMain1.png" alt="" title=""></a></div>
+                        <div class="logo"><a href="index.html"><img src="images/Logo/ChatGPT_Image_May_18__2025__10_15_55_PM-removebg-preview (1).png" alt="" title=""></a></div>
                     </div>
 
                     <div class="nav-outer clearfix">
@@ -51,142 +58,32 @@
                             <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li><a href="index.html">Home</a>
-                                        <!-- <ul>
-                                            <li class="dropdown"><a href="#">Header Styles</a>
-                                                <ul>
-                                                    <li><a href="index-2.html">Header Style One</a></li>
-                                                    <li><a href="index-3.html">Header Style Two</a></li>
-                                                    <li><a href="index-4.html">Header Style Three</a></li>
-                                                    <li><a href="index-5.html">Header Style Four</a></li>
-                                                    <li><a href="index-6.html">Header Style Five</a></li>
-                                                    <li><a href="index-7.html">Header Style Six</a></li>
-                                                    <li><a href="about.html">Header Style Seven</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="index-2.html">Home page 01</a></li>
-                                            <li><a href="index-3.html">Home page 02</a></li>
-                                            <li><a href="index-4.html">Home page 03</a></li>
-                                            <li><a href="index-5.html">Home page 04</a></li>
-                                            <li><a href="index-6.html">Home page 05</a></li>
-                                            <li><a href="index-7.html">Home page 06</a></li>
-                                        </ul> -->
                                     </li>
                                     <li class="dropdown"><a href="#">About</a>
                                         <ul>
                                             <li><a href="about.html">About Us</a></li>
                                             <li><a href="faq.html">FAQ's</a></li>
-                                            <!-- <li><a href="team.html">Our Team</a></li>
-                                            <li><a href="coming-soon.html">Coming Soon</a></li> -->
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">Services</a>
                                         <ul>
-                                            <!-- <li><a href="services.html">All Services</a></li> -->
                                             <li><a href="service-detail.html">Corporate Projects</a></li>
                                             <li><a href="residentialProjects.html">Residential Projects</a></li>
                                             <li><a href="bungalowProject.html">Bungalow Projects</a></li>
                                             <li><a href="hotelProject.html">Hotel Projects</a></li>
                                             <li><a href="gymProject.html">Gym Projects</a></li>
-                                            <!-- <li><a href="service-detail.html">Service Detail</a></li> -->
+                                             <li><a href="salonProject.html">Salon Projects</a></li>
                                         </ul>
                                     </li>
-                                    <!-- <li><a href="service-detail.html">Services</a></li> -->
                                     <li class="dropdown"><a href="#">Products</a>
                                         <ul>
                                             <li><a href="products.html">Our Products</a></li>
-                                            <!-- <li><a href="project-detail.html">Project Detail</a></li> -->
                                         </ul>
                                     </li>
-                                    <!-- <li class="dropdown"><a href="#">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-classic.html">Blog Classic</a></li>
-                                            <li><a href="blog-detail.html">Blog Detail 01</a></li>
-                                            <li><a href="blog-detail-2.html">Blog Detail 02</a></li>
-                                            <li><a href="error-page.html">Error Page</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <!-- <li class="dropdown"><a href="#">Shop</a>
-                                        <ul>
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="shop-single.html">Product Details</a></li>
-                                            <li><a href="shoping-cart.html">Cart Page</a></li>
-                                            <li><a href="checkout.html">Checkout Page</a></li>
-                                            <li><a href="login.html">Registration Page</a></li>
-                                        </ul>
-                                    </li> -->
                                     <li class="current dropdown"><a href="contact.html">Contact</a></li>
-                                    <!-- <li class="dropdown has-mega-menu"><a href="#">Pages</a>
-                                        <div class="mega-menu">
-                                            <div class="mega-menu-bar row clearfix">
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <h3>About</h3>
-                                                    <ul>
-                                                        <li><a href="about.html">About Us</a></li>
-                                                        <li><a href="faq.html">FAQ's</a></li>
-                                                        <li><a href="team.html">Our Team</a></li>
-                                                        <li><a href="coming-soon.html">Coming Soon</a></li>
-                                                        <li><a href="login.html">Login</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <h3>Services</h3>
-                                                    <ul>
-                                                        <li><a href="services.html">All Services</a></li>
-                                                        <li><a href="service-detail.html">Commercial Design</a></li>
-                                                        <li><a href="service-detail.html">Landescape Design</a></li>
-                                                        <li><a href="service-detail.html">Complete Interior</a></li>
-                                                        <li><a href="service-detail.html">Service Detail</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <h3>Projects</h3>
-                                                    <ul>
-                                                        <li><a href="projects.html">Projects</a></li>
-                                                        <li><a href="projects.html">Commercial Projects</a></li>
-                                                        <li><a href="projects.html">Landescape Projects</a></li>
-                                                        <li><a href="project-detail.html">Project Detail</a></li>
-                                                        <li><a href="contact.html">Contact</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <h3>Blog</h3>
-                                                    <ul>
-                                                        <li><a href="blog.html">Blog Grid</a></li>
-                                                        <li><a href="blog-classic.html">Blog Classic</a></li>
-                                                        <li><a href="blog-detail.html">Blog Detail 01</a></li>
-                                                        <li><a href="blog-detail-2.html">Blog Detail 01</a></li>
-                                                        <li><a href="error-page.html">Error Page</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li> -->
                                 </ul>
                             </div>
                         </nav><!-- Main Menu End-->                        
-
-                        <!-- Outer Box-->
-                        <!-- <div class="outer-box">
-                           
-                            <div class="search-box-outer">
-                                <div class="dropdown">
-                                    <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
-                                    <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
-                                        <li class="panel-outer">
-                                            <div class="form-container">
-                                                <form method="post" action="#">
-                                                    <div class="form-group">
-                                                        <input type="search" name="field-name" value="" placeholder="Search Here" required>
-                                                        <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -199,13 +96,8 @@
         <div class="auto-container">
             <div class="inner-container clearfix">
                 <div class="title-box">
-                    <h1>Contact Us</h1>
-                    <!-- <span class="title">The Interior speak for themselves</span> -->
+                    <h1 class="hearderFontBold">Contact Us</h1>
                 </div>
-                <!-- <ul class="bread-crumb clearfix">
-                    <li><a href="index-2.html">Home</a></li>
-                    <li>Contact Us</li>
-                </ul> -->
             </div>
         </div>
     </section>
@@ -223,34 +115,34 @@
                     <div class="inner-column">
                         <div class="sec-title">
                             <span class="float-text">Contact Us</span>
-                            <h2>Contact Us</h2>
+                            <h2 class="hearderFontBold">CONTACT US</h2>
                         </div>
 
                         <div class="contact-form">
                             <form method="post" action="#" id="contact-form">
                                 <div class="row">
                                     <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <input type="text" name="username" placeholder="Name" required="">
+                                        <input id="c_fname" type="text" name="username" placeholder="Name" required="">
                                     </div>
                                     
                                     <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <input type="text" name="phone" placeholder="Phone" required="">
+                                        <input id="c_lname" type="text" name="lastname" placeholder="Last Name">
                                     </div>
 
                                     <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <input type="text" name="company" placeholder="Company">
+                                        <input id="c_phone" type="text" name="phone" placeholder="Phone" required="">
                                     </div>
 
                                     <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <input type="email" name="email" placeholder="Email" required="">
+                                        <input id="c_email" type="email" name="email" placeholder="Email" required="">
                                     </div>
 
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                        <textarea name="message" placeholder="Massage"></textarea>
+                                        <textarea id="c_message" name="message" placeholder="Message"></textarea>
                                     </div>
 
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                        <button class="theme-btn btn-style-three" type="submit" name="submit-form">Submit</button>
+                                        <button id="btn" class="theme-btn btn-style-three" type="submit" name="submit-form">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -260,23 +152,23 @@
                             <div class="row">
                                 <div class="info-block col-lg-4 col-md-4 col-sm-12">
                                     <div class="inner">
-                                        <h4>Location</h4>
-                                        <p>Mumbai</p>
+                                        <h4 class="hearderFontBold">Location</h4>
+                                        <p>Royal Glass NX,Opposite Kakke Da Hotel,near diamond garden,Chembur East,Mumbai-400071</p>
                                     </div>
                                 </div>
 
                                 <div class="info-block col-lg-4 col-md-4 col-sm-12">
                                     <div class="inner">
-                                        <h4>Call Us</h4>
+                                        <h4 class="hearderFontBold">Call Us</h4>
                                         <p>+91 8291795490</p>
                                         <p>+91 9820298065</p>
                                     </div>
 
-                                </div>
+                                </div> 
 
                                 <div class="info-block col-lg-4 col-md-4 col-sm-12">
                                     <div class="inner">
-                                        <h4>Email</h4>
+                                        <h4 class="hearderFontBold">Email</h4>
                                         <p>royalglassnx1@gmail.com</p>
                                         <!-- <p>http://royalglassnx.com</p> -->
                                     </div>
@@ -289,8 +181,7 @@
                 <div class="map-column col-lg-5 col-md-12 col-sm-12">
                     <div class="inner-column">
                          <div class="map-outer">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2165.5182703198143!2d72.89488437174974!3d19.053063852698948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8a7fe7d2dad%3A0x63ded6395a8634fb!2sRoyal%20Glass%20NX!5e1!3m2!1sen!2sin!4v1744746384581!5m2!1sen!2sin" width="600" height="900" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.242702053675!2d72.89488437466457!3d19.053063852693224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8a7fe7d2dad%3A0x63ded6395a8634fb!2sRoyal%20Glass%20NX!5e0!3m2!1sen!2sin!4v1748002350256!5m2!1sen!2sin" width="500" height="1100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -298,163 +189,70 @@
     </section>
     <!--End Contact Page Section -->
 
-    <!--Clients Section-->
-    <!-- <section class="clients-section style-two">
-        <div class="auto-container">
-            <div class="sponsors-outer">
-                <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
-                </ul>
-            </div>
-        </div>
-    </section> -->
-    <!--End Clients Section-->
-
     <br>
     <br>
     <br>
     <br>
     <br>
     <br>
-    
 
     <!-- Main Footer -->
     <footer class="main-footer" style="background-image: url(images/background/5.jpg);">
-        <div class="auto-container">
-            <div class="widgets-section">
-                <div class="row">
-                    <!--Big Column-->
-                    <div class="big-column col-xl-7 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row">
-                            <!--Footer Column-->
-                            <div class="footer-column col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget about-widget">
-                                    <div class="footer-logo">
-                                        <figure>
-                                            <a href="index.html"><img src="" alt=""></a>
-                                        </figure>
-                                    </div>
-                                    <!-- <div class="widget-content">
-                                        <div class="text">Contra and layouts, in content of dummy text is nonsensical.typefaces of dummy text is appearance of different general the content of dummy text is nonsensical. typefaces of dummy text is nonsensical.</div>
-                                    </div> -->
-                                </div>
-                            </div>
-                            
-                            <!--Footer Column-->
-                            <div class="footer-column col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <!-- <div class="footer-widget recent-posts">
-                                    <h2 class="widget-title">Recent Posts</h2>
-                                    <div class="widget-content">
-                                        <div class="post">
-                                            <div class="thumb"><a href="blog-detail.html"><img src="images/resource/post-thumb-1.jpg" alt=""></a></div>
-                                            <h4><a href="blog-detail.html">Triangle Concrete House on lake</a></h4>
-                                            <ul class="info">
-                                                <li>26 Aug</li>
-                                                <li>3 Comments</li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="post">
-                                            <div class="thumb"><a href="blog-detail.html"><img src="images/resource/post-thumb-2.jpg" alt=""></a></div>
-                                            <h4><a href="blog-detail.html">The Amazing Interior for the Hotel art</a></h4>
-                                            <ul class="info">
-                                                <li>26 Aug</li>
-                                                <li>3 Comments</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div> -->
-                            </div>         
+    <div class="auto-container">
+        <!--Widgets Section-->
+        <div class="widgets-section">
+            <div class="row">
+                <!-- First Column -->
+                <div class="footer-column col-md-4 col-sm-12">
+                    <div class="footer-widget about-widget">
+                        <div class="footer-logo">
+                            <figure>
+                                <a href="index.html"><img src="images/Logo/ROYAL GLASS NX LOGO WHITE.png" alt="Your Logo"></a>
+                            </figure>
+                        </div>
+                        <div class="widget-content">
+                            <div class="text">At Royal NX, we uphold the values of quality, trust, and complete customer satisfaction. Our commitment lies in offering top-notch products crafted with precision and care.</div>
                         </div>
                     </div>
-                    
-                    <!--Big Column-->
-                    <div class="big-column col-xl-5 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row clearfix">
-                            <div class="footer-column col-xl-5 col-lg-6 col-md-6 col-sm-12">
-                                 <div class="footer-widget links-widget">
-                                    <!-- <h2 class="widget-title">Useful links</h2>
-                                    <div class="widget-content">
-                                        <ul class="list">
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="projects.html">Project</a></li>
-                                            <li><a href="blog-classic.html">News</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                        </ul>
-                                    </div> -->
-                                </div>
-                            </div>
+                </div>
 
-                            <!--Footer Column-->
-                            <div class="footer-column col-xl-7 col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget gallery-widget">
-                                    <!-- <h2 class="widget-title">Recent Works</h2>
-                                    <div class="widget-content">
-                                        <div class="outer clearfix">
-                                            <figure class="image">
-                                                <a href="images/gallery/1.jpg" class="lightbox-image" title="Image Title Here"><img src="images/resource/work-thumb-1.jpg" alt=""></a>
-                                            </figure>
+                <!-- Second Column -->
+                <div class="footer-column col-md-4 col-sm-12">
+                    <div class="footer-widget links-widget">
+                        <h2 class="widget-title">Useful links</h2>
+                        <div class="widget-content">
+                            <ul class="list">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="faq.html">FAQ's</a></li>
+                                <li><a href="service-detail.html">Services</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-                                            <figure class="image">
-                                                <a href="images/gallery/2.jpg" class="lightbox-image" title="Image Title Here"><img src="images/resource/work-thumb-2.jpg" alt=""></a>
-                                            </figure>
-
-                                            <figure class="image">
-                                                <a href="images/gallery/3.jpg" class="lightbox-image" title="Image Title Here"><img src="images/resource/work-thumb-3.jpg" alt=""></a>
-                                            </figure>
-
-                                            <figure class="image">
-                                                <a href="images/gallery/4.jpg" class="lightbox-image" title="Image Title Here"><img src="images/resource/work-thumb-4.jpg" alt=""></a>
-                                            </figure>
-
-                                            <figure class="image">
-                                                <a href="images/gallery/5.jpg" class="lightbox-image" title="Image Title Here"><img src="images/resource/work-thumb-5.jpg" alt=""></a>
-                                            </figure>
-
-                                            <figure class="image">
-                                                <a href="images/gallery/1.jpg" class="lightbox-image" title="Image Title Here"><img src="images/resource/work-thumb-6.jpg" alt=""></a>
-                                            </figure>
-                                        </div>
-                                    </div>       
-                                </div> -->
+                <!-- Third Column -->
+                <div class="footer-column col-md-4 col-sm-12">
+                    <div class="footer-widget gallery-widget">
+                        <h2 class="widget-title">Recent Works</h2>
+                        <div class="widget-content">
+                            <div class="outer clearfix">
+                                <figure class="image"><img src="images/Footer images/1.jpg" alt=""></figure>
+                                <figure class="image"><img src="images/Footer images/2.jpg" alt=""></figure>
+                                <figure class="image"><img src="images/Footer images/3.jpg" alt=""></figure>
+                                <figure class="image"><img src="images/Footer images/4.jpg" alt=""></figure>
+                                <figure class="image"><img src="images/Footer images/5.jpg" alt=""></figure>
+                                <figure class="image"><img src="images/Footer images/6.jpg" alt=""></figure>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <!--Footer Bottom-->
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <!-- <div class="inner-container clearfix">
-                    <div class="social-links">
-                        <ul class="social-icon-two">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="copyright-text">
-                       <a href="https://www.templateshub.net" target="_blank">Templates Hub</a>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </footer>
+
+            </div> <!-- .row -->
+        </div> <!-- .widgets-section -->
+    </div> <!-- .auto-container -->
+</footer>
     <!-- End Main Footer -->
 
 </div>
@@ -479,6 +277,62 @@
 <script src="js/script.js"></script>
 <!-- Color Setting -->
 <script src="js/color-settings.js"></script>
+
+
+<script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+    apiKey: "AIzaSyBuDhjZZ398QY6f6PPbHK0CdK9GUb0RccA",
+    authDomain: "royal-glass-nx-f1a83.firebaseapp.com",
+    projectId: "royal-glass-nx-f1a83",
+    storageBucket: "royal-glass-nx-f1a83.firebasestorage.app",
+    messagingSenderId: "562730797916",
+    appId: "1:562730797916:web:bb89556adcb233a7950f99",
+    measurementId: "G-D158V6W8LM"
+    };
+    firebase.initializeApp(firebaseConfig);
+    var messagesRef = firebase.database().ref('Contact Us');
+    document.querySelector("#btn").addEventListener('click', (e) => {
+      console.log('sent');
+      e.preventDefault();
+      const firstname = document.getElementById('c_fname').value;
+      const lastname = document.getElementById('c_lname').value;
+	  const phone = document.getElementById('c_phone').value;
+      const email = document.getElementById('c_email').value;
+      const message = document.getElementById('c_message').value;
+      const obj = {
+        firstname: firstname,
+        lastname: lastname,
+        phone:phone,
+        email: email,
+        message: message
+      }
+      if (firstname != "" && lastname != "" && email != "" && phone != "" && message != "") {
+        messagesRef.push(obj);
+        document.getElementById('c_fname').value = "";
+        document.getElementById('c_lname').value = "";
+        document.getElementById('c_phone').value = "";
+        document.getElementById('c_email').value = "";
+        document.getElementById('c_message').value = "";
+        alert("Message Has Been Send....");
+      }
+      else {
+        if (firstname == "")
+          alert("Enter First name");
+        else if (lastname == "")
+          alert("Enter Last name");
+
+        else if (email == "")
+          alert("Enter Email")
+
+        else if (phone == "")
+          alert("Enter Subject")
+
+        else if (message == "")
+          alert("Enter Message")
+      }
+    });
+  </script>
 </body>
 
 <!-- contact27:43-->
