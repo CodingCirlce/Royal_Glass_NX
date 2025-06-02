@@ -2625,7 +2625,7 @@ header-style-seven .nav-toggler:hover{
 	font-weight: 700;
 }
 
-.banner-carousel .owl-nav{
+.banner-carousel .owl-nav{ 
     position: absolute;
     right: 30%;
     bottom: -80px;
@@ -5698,7 +5698,8 @@ header-style-seven .nav-toggler:hover{
 
 .projects-section{
 	position: relative;
-	padding: 100px 0 0;
+	padding: 100px 15px 0;
+	padding-left: 36px;
 }
 
 .projects-section .inner-container{
@@ -6112,7 +6113,7 @@ header-style-seven .nav-toggler:hover{
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
-	-webkit-transition: all 500ms ease;
+	-webkit-transition: all 200ms ease;
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
@@ -13453,7 +13454,8 @@ header-style-seven .nav-toggler:hover{
 }
 
 .footer-column:nth-child(2){
-	padding: 0px 120px;
+	/* padding: 0px 170px; */
+	padding-left: 181px;
 }
 
 .main-footer .footer-logo {
@@ -13538,3 +13540,429 @@ header-style-seven .nav-toggler:hover{
   font-weight: 400;
   font-style: normal;
 }
+/* ================================media queries=============== */
+
+.widgets-section .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  max-width: 48%;
+}
+.footer-logo img {
+  width: 120px;
+  height: auto;
+}
+/* 0 - 300px: very small screens - stack columns, smaller logo */
+@media (max-width: 300px) {
+  .widgets-section .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-column {
+    max-width: 100%;
+  }
+  .footer-logo img {
+    width: 80px;
+  }
+
+
+}
+
+/* 301 - 400px */
+@media (min-width: 301px) and (max-width: 400px) {
+  .widgets-section .row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .footer-column {
+    max-width: 100%;
+  }
+  .footer-logo img {
+    width: 90px;
+  }
+
+
+}
+
+/* 401 - 500px */
+@media (max-width: 500px) {
+  .widgets-section .row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .footer-column {
+    max-width: 100%;
+  }
+  .footer-logo img {
+    width: 90px;
+  }
+}
+
+
+/* 501 - 600px */
+@media (min-width: 501px) and (max-width: 600px) {
+  .widgets-section .row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .footer-column {
+    max-width: 100%;
+  }
+  .footer-logo img {
+    width: 90px;
+  }
+
+
+}
+
+/* 601 - 750px */
+@media (min-width: 601px) and (max-width: 750px) {
+  .widgets-section .row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .footer-column {
+    max-width: 100%;
+  }
+  .footer-logo img {
+    width: 90px;
+  }
+
+}
+
+/* 751 - 1000px */
+@media (min-width: 751px) and (max-width: 1000px) {
+  .widgets-section .row {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .footer-column {
+    max-width: 48%;
+  }
+  .footer-logo img {
+    width: 120px;
+  }
+}
+
+/* Left right button "OUR PROJECTS" Page start */
+
+.side-arrow {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px;
+    transition: background 0.1s ease;
+    z-index: 10;
+}
+
+.side-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-project {
+    left: 10px; /* adjust as needed */
+}
+
+.next-project {
+    right: 10px; /* adjust as needed */
+}
+
+@media (max-width: 300px) {
+    .side-arrow { padding: 8px; font-size: 22px; }
+    .prev-project { left: 5px; }
+    .next-project { right: 5px; }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .side-arrow { padding: 9px; font-size: 15px; }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .side-arrow { padding: 10px; font-size: 16px; }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+    .side-arrow { padding: 12px; font-size: 18px; }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .side-arrow { padding: 12px; font-size: 18px; }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    .side-arrow { padding: 14px; font-size: 20px; }
+}
+
+
+/* Left right button "OUR PROJECTS" Page end */
+
+/* Left right button "OUR SPECIALIZTION" Page start */
+
+.service-arrow {
+  position: absolute;
+  top: 37%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 12px;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.service-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-service-arrow {
+  left: 10px;
+}
+
+.next-service-arrow {
+  right: 10px;
+}
+
+/* Optional: Adjust button size for smaller screens */
+@media (max-width: 300px) {
+    .side-arrow { padding: 8px; font-size: 22px; }
+    .prev-project { left: 5px; }
+    .next-project { right: 5px; }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .side-arrow { padding: 9px; font-size: 15px; }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .side-arrow { padding: 10px; font-size: 16px; }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+    .side-arrow { padding: 12px; font-size: 18px; }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .side-arrow { padding: 12px; font-size: 18px; }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    .side-arrow { padding: 14px; font-size: 20px; }
+}
+
+
+/* Left right button "OUR SPECIALIZTION" Page end */
+
+
+/* about.html "our process" section start */
+
+/* Targeting the process-section's row */
+.process-section .row {
+	flex: unset;
+    max-width: unset;
+  
+}
+
+@media (min-width:200px) and (max-width: 400px) {
+  .process-section .process-block {
+    flex: 0 0 50%; /* 50% width for 2 items per row */
+  max-width: 50%;
+  }
+}
+
+/* From 600px and above, revert to Bootstrap’s default */
+@media (min-width:400px) and (max-width: 600px) {
+  .process-section .process-block {
+    flex: 0 0 50%; /* 50% width for 2 items per row */
+  max-width: 50%;
+  }
+}
+
+/* about.html "our process" section end*/
+
+/* Default styles for large screens */
+.banner-carousel .content-box {
+    position: absolute;
+    bottom: -170px;
+    right: 340px;
+    font-size: 28px;
+}
+
+/* Very Small Screens (0-200px) */
+@media (max-width: 200px) {
+    .banner-carousel .content-box {
+        text-align: center;
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+/* Small Screens (300-400px) */
+@media (min-width: 300px) and (max-width: 400px) {
+    .banner-carousel .content-box {
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Small Phones (400-500px) */
+@media (min-width: 400px) and (max-width: 500px) {
+    .banner-carousel .content-box {
+        text-align: center;
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+/* Medium Screens (500-700px) */
+@media (min-width: 500px) and (max-width: 700px) {
+    .banner-carousel .content-box {
+        bottom: -90px;
+        right: 100px;
+        font-size: 20px;
+    }
+}
+
+/* Tablets and Smaller Laptops (700-900px) */
+@media (min-width: 700px) and (max-width: 900px) {
+    .banner-carousel .content-box {
+        bottom: -174px;
+        right: 114px;
+        font-size: 24px;
+    }
+}
+
+/* Large Screens (Above 900px) */
+@media (min-width: 901px) {
+    .banner-carousel .content-box {
+        bottom: -170px;
+        right: 312px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 300px) {
+  .content-box.bottom-left-text {
+    font-size: 12px;
+    line-height: 1.2em ;
+  }
+  .banner-carousel h2 {
+    font-size: 18px !important;
+    line-height: 1.3em !important;
+  }
+
+  .banner-carousel .text {
+    font-size: 12px !important;
+    line-height: 1.3em !important;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 400px) {
+  .content-box.bottom-left-text {
+    font-size: 10px;
+    line-height: 1.3em;
+    top: 190px;
+    right: 81px;
+  }
+
+  .banner-carousel h2 {
+    font-size: 15px !important;
+    line-height: 1.3em !important;
+  }
+
+  .banner-carousel .text {
+    font-size: 12px !important;
+    line-height: 1.3em !important;
+  }
+  
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .content-box.bottom-left-text {
+    font-size: 10px;
+    line-height: 1.3em;
+    top: 183px;
+    right: 100px;
+  }
+
+  .banner-carousel h2 {
+    font-size: 15px !important;
+    line-height: 1.3em !important;
+  }
+
+  .banner-carousel .text {
+    font-size: 12px !important;
+    line-height: 1.3em !important;
+  }
+  
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+  .content-box.bottom-left-text {
+    font-size: 5px;
+    line-height: -7.7em;
+    right: 140px;
+    top: 170px;
+  }
+
+  .banner-carousel h2 {
+    font-size: 20px !important;
+    line-height: 1.3em !important;
+  }
+
+  .banner-carousel .text {
+    font-size: 15px !important;
+    line-height: 1.3em !important;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 800px) {
+  .content-box.bottom-left-text {
+    font-size: 10px;
+    right: 218px;
+    top: 160px;
+  }
+
+  .banner-carousel h2 {
+    font-size: 30px !important;
+    line-height: 1.3em !important;
+  }
+
+  .banner-carousel .text {
+    font-size: 18px !important;
+    line-height: 1.3em !important;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .content-box.bottom-left-text {
+    font-size: 10px;
+    right: 218px;
+    top: 160px;
+  }
+
+  .banner-carousel h2 {
+    font-size: 30px !important;
+    line-height: 1.3em !important;
+  }
+
+  .banner-carousel .text {
+    font-size: 18px !important;
+    line-height: 1.3em !important;
+  }
+}
+
