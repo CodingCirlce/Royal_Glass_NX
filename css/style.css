@@ -13966,3 +13966,60 @@ header-style-seven .nav-toggler:hover{
   }
 }
 
+/* Common style for all screens: */
+.banner-section .slide-item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; /* shows full image without cropping */
+  height: 100vh; /* optional: adjust this to your carousel's desired height */
+}
+
+/* 0 - 100px */
+@media (max-width: 100px) {
+  .banner-section .slide-item {
+    height: 100px; /* adjust as needed */
+  }
+}
+
+/* 100 - 300px */
+@media (min-width: 100px) and (max-width: 300px) {
+  .banner-section .slide-item {
+    height: 200px; /* adjust for small devices */
+  }
+}
+
+/* 300 - 400px */
+@media (min-width: 300px) and (max-width: 400px) {
+  .banner-section .slide-item {
+    height: 250px; /* tweak as needed */
+  }
+}
+
+/* 400 - 500px */
+@media (min-width: 400px) and (max-width: 500px) {
+  .banner-section .slide-item {
+    height: 300px;
+  }
+}
+
+/* 500 - 700px */
+@media (min-width: 500px) and (max-width: 700px) {
+  .banner-section .slide-item {
+    height: 400px;
+  }
+}
+
+/* 700 - 900px */
+@media (min-width: 700px) and (max-width: 900px) {
+  .banner-section .slide-item {
+    height: 500px;
+  }
+}
+
+/* 900px and above */
+@media (min-width: 900px) {
+  .banner-section .slide-item {
+    height: 100vh; /* or any fixed size */
+  }
+}
+
