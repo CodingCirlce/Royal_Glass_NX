@@ -747,3 +747,60 @@
 	$('.prev-service-arrow').click(function () {
 	$('.services-carousel').trigger('prev.owl.carousel');
 	});
+
+	
+////////////////////////////////////////////////////////////
+//This the JS for the configuration of images in index.html courosal
+
+function updateBannerImages() {
+    const slides = document.querySelectorAll('.slide-item');
+    const width = window.innerWidth;
+
+    slides.forEach(slide => {
+        let img = slide.getAttribute('data-desktop'); // default
+
+        if (width <= 768 && width >= 592) {
+            img = slide.getAttribute('data-mobile');
+        } else if (width < 592) {
+            img = slide.getAttribute('data-ultramobile');
+        }
+
+        slide.style.backgroundImage = `url(${img})`;
+    });
+}
+
+// Run on load and resize
+updateBannerImages();
+window.addEventListener('resize', updateBannerImages);
+
+////////////////////////////////////////////////////////////
+//This is the js for the services section add the image url in line 788 and 791
+
+function setResponsiveBackground() {
+    const bgSection = document.getElementById('responsiveBg');
+    const width = window.innerWidth;
+
+    if (width >= 768) {
+        // Desktop
+        bgSection.style.backgroundImage = "url('images/background/10.jpg')";
+    } else if (width >= 592 && width < 768) {
+        // Mobile large
+        bgSection.style.backgroundImage = "url('images/mobile/Mirror3c.png')";
+    } else {
+        // Mobile small
+        bgSection.style.backgroundImage = "url('images/mobile/Mirror3c.png')";
+    }
+
+    // Always set these:
+    bgSection.style.backgroundSize = "cover";
+    bgSection.style.backgroundPosition = "center";
+    bgSection.style.backgroundRepeat = "no-repeat";
+    bgSection.style.minHeight = "300px"; // ensure it doesn’t collapse
+}
+
+// Call it on load
+window.addEventListener('load', setResponsiveBackground);
+// Call it on resize
+window.addEventListener('resize', setResponsiveBackground);
+	
+////////////////////////////////////////////////////////////
